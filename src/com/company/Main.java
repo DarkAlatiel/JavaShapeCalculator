@@ -23,6 +23,10 @@ public class Main {
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
+        Triangle triangle1 = new Triangle(3, 4, 5);
+        Triangle triangle2 = new RectangularTriangle(3, 4);
+        System.out.println(triangle1 == triangle2);
+        System.out.println(triangle1.equals(triangle2));
         System.out.println("Программа завершена");
     }
 }
