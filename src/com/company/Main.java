@@ -6,8 +6,6 @@ import com.company.model.triangle.IsoscelesTriangle;
 import com.company.model.triangle.RectangularTriangle;
 import com.company.model.triangle.Triangle;
 
-import java.util.InputMismatchException;
-
 public class Main {
 
     public static void main(String[] args) {

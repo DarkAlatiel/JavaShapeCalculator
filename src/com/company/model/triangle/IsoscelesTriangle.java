@@ -11,9 +11,12 @@ public class IsoscelesTriangle extends Triangle {
             throw new IllegalArgumentException("Неверное значение боковой стороны!");
         }
         if (Validator.isValidSideValue(base)) {
-            this.thirdSide = side;
+            this.thirdSide = base;
         } else {
             throw new IllegalArgumentException("Неверное значение основания!");
+        }
+        if (Validator.isNotValidSideValues(this.firstSide, this.secondSide, this.thirdSide)) {
+            throw new IllegalArgumentException("Треугольник невозможно построить!");
         }
     }
 

@@ -30,6 +30,9 @@ public class Triangle extends ShapeBase {
         } else {
             throw new IllegalArgumentException("Неверное значение третьей стороны!");
         }
+        if (Validator.isNotValidSideValues(firstSide, secondSide, thirdSide)) {
+            throw new IllegalArgumentException("Треугольник невозможно построить!");
+        }
     }
 
     @Override
